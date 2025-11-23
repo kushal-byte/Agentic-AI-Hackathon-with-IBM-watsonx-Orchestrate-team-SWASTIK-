@@ -5,13 +5,22 @@
   "description": "Smart customer service automation powered by multi-agent AI orchestration",
   "author": "SWASTIK Team",
   "license": "MIT",
+  "homepage": ".",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kushal-byte/Agentic-AI-Hackathon-with-IBM-watsonx-Orchestrate-team-SWASTIK-.git"
+  },
+  "keywords": ["ai", "customer-service", "multi-agent", "watson", "orchestrate", "hackathon"],
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json"
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir=dist",
+    "serve": "vite preview --host"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
